@@ -1,6 +1,6 @@
 package hello;
-int test;
 public class Greeter {
+	int test;
 	public String sayHello() {
 		return "Hello world!";
 	}
