@@ -15,7 +15,7 @@ if ($ret -ne 0) {
 
 # Run the jar file and capture the last line to actual.txt
 Write-Host "Running the application..."
-$output = & java -jar "target\gs-maven-0.1.0.jar"
+$output = & "C:/Bharani/jdk-17.0.2/bin/java" -jar "target\gs-maven-0.1.0.jar"
 $lastLine = $output | Select-Object -Last 1
 $lastLine | Out-File -FilePath "target\actual.txt" -Encoding UTF8
 
@@ -60,3 +60,4 @@ Remove-Item -Path "target" -Recurse -Force -ErrorAction SilentlyContinue
 
 Write-Host "Script completed successfully"
 exit 0
+
